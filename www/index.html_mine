@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+    <style>
+        body {
+            background-color: #595050;
+            color: white;
+
+        }
+
+        img {
+            display: inline-block;
+        }
+
+        .blink {
+            animation:fade 3000ms infinite;
+            -webkit-animation:fade 3000ms infinite;
+        }
+
+    </style>
+
+    <head>    
+        <title>Device Properties Example</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div><img src="img/transp-ninja.png"/></div>
+        </header>
+
+        <section>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device...</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+            <br/>
+            <div id="deviceProperties">
+                <p>Loading device properties...</p>
+            </div>
+        </section>
+
+        <footer>
+        </footer>
+        
+
+
+
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            app.initialize()
+        </script>
+    </body>
+
+
+</html>

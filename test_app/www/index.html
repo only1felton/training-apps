@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 
 <html>
+
+    <!--<style type="text/css">
+        body {
+            background-color: #595050
+        }
+    </style>-->
+
     <head>    
-        <title>Device Properties Examplle</title>
-
-        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        <script type="text/javascript" charset="utf-8">
-
-            // Wait for device API libraries to load
-            //
-            document.addEventListener("deviceready", onDeviceReady, false);
-
-            // device APIs are available
-            //
-            function onDeviceReady() {
-                var element = document.getElementById('deviceProperties');
-                element.innerHTML = 'Device Name: '     + device.name     + '<br />' +
-                'Device Cordova: '  + device.cordova  + '<br />' +
-                'Device Platform: ' + device.platform + '<br />' +
-                'Device UUID: '     + device.uuid     + '<br />' +
-                'Device Model: '    + device.model    + '<br />' +
-                'Device Version: '  + device.version  + '<br />';
-            }
-
-        </script>
+        <title>Device Properties Example</title>
     </head>
 
     <body>
-        <p id="deviceProperties">Loading device properties...</p>
+
+        <header>
+            <div><img src="img/ninja.jpg"/></div>
+        </header>
+
+        <section>
+            <div id="deviceProperties">Loading device properties...</p>
+        </section>
+
+        <footer>
+        </footer>
+        
+
+
+
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="index.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            app.initialize()
+        </script>
     </body>
+
+
 </html>

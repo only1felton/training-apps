@@ -45,5 +45,18 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+
+        showProperties();
     }
 };
+
+function showProperties() {
+    var propertyElement = document.getElementById('deviceProperties');
+    propertyElement.innerHTML = "<p>" +
+                                "Device Name: " + device.name + "<br/>" +
+                                "Cordova Version: " + device.cordova + "<br/>" +
+                                "Device Platform: " + device.platform + "<br/>" +
+                                "Device UUID: " + device.UUID + "<br/>" +
+                                "Device Version: " + device.version + "<br/>" +
+                                "</p>"
+}
